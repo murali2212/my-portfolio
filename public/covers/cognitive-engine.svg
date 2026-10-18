@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f5f5f3"/>
+  <g stroke="#d8d8d8" stroke-width="1">
+    <line x1="0" y1="260" x2="1600" y2="260"/>
+    <line x1="0" y1="440" x2="1600" y2="440"/>
+    <line x1="0" y1="620" x2="1600" y2="620"/>
+  </g>
+  <g stroke="#111111" stroke-width="2" fill="none">
+    <path d="M360 260 L640 190 L920 300 L1180 220"/>
+    <path d="M360 260 L560 440 L920 300"/>
+    <path d="M560 440 L840 560 L1180 480 L1180 220"/>
+    <path d="M840 560 L1080 640"/>
+    <path d="M560 440 L440 620 L740 660 L1080 640"/>
+    <path d="M740 660 L920 300"/>
+  </g>
+  <g fill="#f5f5f3" stroke="#111111" stroke-width="2">
+    <circle cx="360" cy="260" r="26"/>
+    <circle cx="640" cy="190" r="18"/>
+    <circle cx="920" cy="300" r="34"/>
+    <circle cx="1180" cy="220" r="20"/>
+    <circle cx="560" cy="440" r="30"/>
+    <circle cx="1180" cy="480" r="18"/>
+    <circle cx="840" cy="560" r="26"/>
+    <circle cx="440" cy="620" r="18"/>
+    <circle cx="740" cy="660" r="22"/>
+    <circle cx="1080" cy="640" r="30"/>
+  </g>
+  <circle cx="920" cy="300" r="10" fill="#111111"/>
+  <circle cx="560" cy="440" r="8" fill="#111111"/>
+  <circle cx="1080" cy="640" r="8" fill="#111111"/>
+  <text x="72" y="96" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="26" letter-spacing="8" fill="#999999">01 / 09</text>
+  <text x="72" y="812" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="44" font-weight="300" letter-spacing="3" fill="#111111">COGNITIVE ENGINE — COLONY</text>
+  <line x1="72" y1="842" x2="1528" y2="842" stroke="#d8d8d8" stroke-width="1"/>
+</svg>

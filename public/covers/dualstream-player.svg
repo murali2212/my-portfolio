@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f5f5f3"/>
+  <g stroke="#111111" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M340 450 q40 -90 80 0 t80 0 t80 0 t80 0 t80 0 t80 0"/>
+    <path d="M340 520 q40 -60 80 0 t80 0 t80 0 t80 0 t80 0 t80 0" stroke="#999999"/>
+  </g>
+  <g stroke="#111111" stroke-width="3" fill="none">
+    <path d="M300 300 a140 140 0 0 1 280 0"/>
+    <path d="M300 600 a140 140 0 0 0 280 0" stroke="#999999"/>
+    <rect x="250" y="290" width="56" height="130" rx="26" fill="#f5f5f3"/>
+    <rect x="250" y="560" width="56" height="130" rx="26" fill="#f5f5f3"/>
+    <path d="M1020 300 a140 140 0 0 1 280 0"/>
+    <path d="M1020 600 a140 140 0 0 0 280 0" stroke="#999999"/>
+    <rect x="1294" y="290" width="56" height="130" rx="26" fill="#f5f5f3"/>
+    <rect x="1294" y="560" width="56" height="130" rx="26" fill="#f5f5f3"/>
+  </g>
+  <g stroke="#d8d8d8" stroke-width="1.5" stroke-dasharray="4 8" fill="none">
+    <line x1="720" y1="240" x2="720" y2="660"/>
+    <line x1="880" y1="240" x2="880" y2="660"/>
+  </g>
+  <text x="72" y="96" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="26" letter-spacing="8" fill="#999999">06 / 09</text>
+  <text x="72" y="812" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="44" font-weight="300" letter-spacing="3" fill="#111111">DUALSTREAM PLAYER</text>
+  <line x1="72" y1="842" x2="1528" y2="842" stroke="#d8d8d8" stroke-width="1"/>
+</svg>

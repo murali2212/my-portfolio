@@ -1,0 +1,37 @@
+.home-btn-wrap {
+  margin-top: 64px;
+  margin-bottom: calc(-1 * clamp(96px, 14vw, 180px));
+  padding: 24px 0 80px;
+  border-top: 1px solid var(--color-line);
+}
+
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--color-ink);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.home-btn__arrow {
+  display: inline-block;
+  transition: transform 250ms ease;
+}
+
+.home-btn:hover .home-btn__arrow {
+  transform: translateX(-4px);
+}
+
+.home-btn:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-btn__arrow {
+    transition: none;
+  }
+}

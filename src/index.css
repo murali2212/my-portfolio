@@ -1,0 +1,304 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-paper: #f5f5f3;
+  --color-ink: #111111;
+  --color-muted: #666666;
+  --color-faint: #999999;
+  --color-line: #d8d8d8;
+  --color-pure: #ffffff;
+  --font-sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--color-ink);
+    color: var(--color-paper);
+  }
+
+  :focus-visible {
+    outline: 1px solid var(--color-ink);
+    outline-offset: 4px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body.cursor-custom,
+  body.cursor-custom a,
+  body.cursor-custom button {
+    cursor: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.infinite-project-card-belt {
+  --belt-page-bg: #f4f4f1;
+  --belt-card-bg: #e4e4de;
+  --belt-card-bg-focus: #dcdcd5;
+  --belt-cover-bg: #f6f6f3;
+  --belt-ink: #161616;
+  --belt-ink-soft: #55554f;
+  --belt-ink-faint: #8b8b84;
+  --belt-line: #cfcfc8;
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  overflow: hidden;
+  padding: 48px 0;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 22%,
+    #000 78%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 22%,
+    #000 78%,
+    transparent 100%
+  );
+}
+
+.infinite-project-card-belt__track {
+  position: relative;
+  width: 100%;
+  height: clamp(420px, 56vh, 520px);
+  min-height: 420px;
+}
+
+.infinite-project-card-belt__card {
+  position: absolute;
+  top: 50%;
+  transform-origin: center center;
+  width: 340px;
+  text-decoration: none;
+  color: inherit;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.infinite-project-card-belt__card img,
+.infinite-project-card-belt__card [data-image],
+.infinite-project-card-belt__card img * {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.infinite-project-card-belt__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: clamp(400px, 54vh, 480px);
+  max-height: 60vh;
+  padding: 20px;
+  border: 1px solid var(--belt-line);
+  border-radius: 4px;
+  background: var(--belt-card-bg);
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.infinite-project-card-belt__cover {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 180px;
+  background: var(--belt-cover-bg);
+  overflow: hidden;
+  border: 0;
+}
+
+.infinite-project-card-belt__cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background: var(--belt-cover-bg);
+}
+
+.infinite-project-card-belt__placeholder {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--belt-cover-bg),
+    var(--belt-cover-bg) 9px,
+    var(--belt-line) 9px,
+    var(--belt-line) 10px
+  );
+}
+
+.infinite-project-card-belt__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+  font-size: 10.5px;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--belt-ink-faint);
+  white-space: nowrap;
+}
+
+.infinite-project-card-belt__meta span:last-child {
+  max-width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: right;
+}
+
+.infinite-project-card-belt__card h2 {
+  margin-top: 12px;
+  font-size: clamp(22px, 2.1vw, 30px);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  font-weight: 300;
+  color: var(--belt-ink);
+  text-transform: uppercase;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+.infinite-project-card-belt__card p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--belt-ink-soft);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+.infinite-project-card-belt__tags {
+  display: flex;
+  gap: 14px;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--belt-line);
+  list-style: none;
+  font-size: 10.5px;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--belt-ink-faint);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.infinite-project-card-belt__tags li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.infinite-project-card-belt__footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--belt-line);
+  font-size: 10.5px;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--belt-ink-faint);
+}
+
+.infinite-project-card-belt__footer span:last-child {
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.infinite-project-card-belt__card:hover .infinite-project-card-belt__footer span:last-child,
+.infinite-project-card-belt__card:focus-visible .infinite-project-card-belt__footer span:last-child {
+  transform: translateX(4px);
+}
+
+.infinite-project-card-belt__card:focus-visible {
+  outline: 2px solid var(--belt-ink);
+  outline-offset: 4px;
+}
+
+@media (max-width: 767px) {
+  .infinite-project-card-belt {
+    padding: 32px 0;
+  }
+
+  .infinite-project-card-belt__track {
+    min-height: 360px;
+  }
+
+  .infinite-project-card-belt__card {
+    width: min(78vw, 320px);
+  }
+
+  .infinite-project-card-belt__content {
+    height: min(54vh, 420px);
+  }
+}
+
+/* Pop-ups (dialogs) get the normal mouse cursor back.
+   The site hides the normal cursor and draws its own dot, but a pop-up sits
+   on top of that dot, so inside a pop-up you could not see any cursor. */
+@media (hover: hover) and (pointer: fine) {
+  body.cursor-custom [role='dialog'],
+  body.cursor-custom [role='dialog'] *,
+  body.cursor-custom [aria-modal='true'],
+  body.cursor-custom [aria-modal='true'] *,
+  body.cursor-custom [data-native-cursor],
+  body.cursor-custom [data-native-cursor] * {
+    cursor: auto;
+  }
+
+  body.cursor-custom [role='dialog'] button,
+  body.cursor-custom [role='dialog'] a,
+  body.cursor-custom [aria-modal='true'] button,
+  body.cursor-custom [aria-modal='true'] a,
+  body.cursor-custom [data-native-cursor] button,
+  body.cursor-custom [data-native-cursor] a {
+    cursor: pointer;
+  }
+}

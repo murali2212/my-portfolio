@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f5f5f3"/>
+  <g fill="none" stroke="#111111" stroke-width="2.5">
+    <path d="M420 620 C420 380 640 300 800 450 C960 600 1180 520 1180 280"/>
+    <path d="M420 280 C420 520 640 600 800 450" stroke="#999999"/>
+  </g>
+  <g fill="#111111">
+    <circle cx="420" cy="620" r="10"/>
+    <circle cx="1180" cy="280" r="10"/>
+    <circle cx="800" cy="450" r="14"/>
+  </g>
+  <circle cx="800" cy="450" r="30" fill="none" stroke="#111111" stroke-width="1.5" stroke-dasharray="3 7"/>
+  <g stroke="#d8d8d8" stroke-width="1.5" fill="none">
+    <path d="M240 720 h1120"/>
+    <path d="M240 180 h1120"/>
+  </g>
+  <g fill="#999999">
+    <circle cx="300" cy="180" r="4"/>
+    <circle cx="1300" cy="720" r="4"/>
+    <circle cx="620" cy="180" r="3"/>
+    <circle cx="980" cy="720" r="3"/>
+  </g>
+  <text x="72" y="96" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="26" letter-spacing="8" fill="#999999">07 / 09</text>
+  <text x="72" y="812" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="44" font-weight="300" letter-spacing="3" fill="#111111">JOURNEY</text>
+  <line x1="72" y1="842" x2="1528" y2="842" stroke="#d8d8d8" stroke-width="1"/>
+</svg>

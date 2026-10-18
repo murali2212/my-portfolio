@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f5f5f3"/>
+  <g fill="#f5f5f3" stroke="#111111" stroke-width="2">
+    <rect x="240" y="480" width="240" height="200"/>
+    <rect x="540" y="540" width="240" height="140"/>
+    <rect x="840" y="500" width="240" height="180"/>
+    <rect x="1140" y="560" width="220" height="120"/>
+  </g>
+  <g stroke="#111111" stroke-width="2" fill="none">
+    <path d="M300 480 V400 h40 V480"/>
+    <path d="M640 540 V460 h40 V540"/>
+    <path d="M940 500 V420 h40 V500"/>
+    <line x1="240" y1="560" x2="480" y2="560" stroke="#999999"/>
+    <line x1="540" y1="590" x2="780" y2="590" stroke="#999999"/>
+    <line x1="840" y1="570" x2="1080" y2="570" stroke="#999999"/>
+    <line x1="1140" y1="610" x2="1360" y2="610" stroke="#999999"/>
+  </g>
+  <g stroke="#111111" stroke-width="2" fill="none">
+    <line x1="360" y1="400" x2="660" y2="320"/>
+    <line x1="660" y1="320" x2="960" y2="380"/>
+    <line x1="960" y1="380" x2="1250" y2="300"/>
+    <line x1="360" y1="400" x2="660" y2="320" stroke="#999999"/>
+  </g>
+  <g fill="#f5f5f3" stroke="#111111" stroke-width="2.5">
+    <circle cx="360" cy="400" r="24"/>
+    <circle cx="660" cy="320" r="34"/>
+    <circle cx="960" cy="380" r="24"/>
+    <circle cx="1250" cy="300" r="34"/>
+  </g>
+  <g fill="#111111">
+    <circle cx="660" cy="320" r="12"/>
+    <circle cx="1250" cy="300" r="12"/>
+    <circle cx="360" cy="400" r="8"/>
+    <circle cx="960" cy="380" r="8"/>
+  </g>
+  <line x1="240" y1="700" x2="1440" y2="700" stroke="#d8d8d8" stroke-width="1.5"/>
+  <text x="72" y="96" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="26" letter-spacing="8" fill="#999999">08 / 09</text>
+  <text x="72" y="812" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="44" font-weight="300" letter-spacing="3" fill="#111111">FACTORYBRAIN</text>
+  <line x1="72" y1="842" x2="1528" y2="842" stroke="#d8d8d8" stroke-width="1"/>
+</svg>

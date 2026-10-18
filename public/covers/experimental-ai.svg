@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f5f5f3"/>
+  <g stroke="#d8d8d8" stroke-width="1.5" fill="none">
+    <rect x="280" y="160" width="1040" height="540" stroke-dasharray="6 10"/>
+  </g>
+  <g stroke="#111111" stroke-width="4" fill="none">
+    <path d="M480 240 h-80 v180"/>
+    <path d="M1120 240 h80 v180"/>
+    <path d="M480 620 h-80 v-180"/>
+    <path d="M1120 620 h80 v-180"/>
+  </g>
+  <g stroke="#111111" stroke-width="2" fill="none">
+    <path d="M700 300 l100 -60 l100 60 v140 l-100 60 l-100 -60 z"/>
+    <line x1="700" y1="300" x2="800" y2="360"/>
+    <line x1="1000" y1="300" x2="800" y2="360"/>
+    <line x1="800" y1="360" x2="800" y2="500"/>
+    <line x1="700" y1="440" x2="800" y2="500"/>
+    <line x1="1000" y1="440" x2="800" y2="500"/>
+  </g>
+  <g fill="#111111">
+    <circle cx="700" cy="300" r="9"/>
+    <circle cx="900" cy="300" r="9"/>
+    <circle cx="700" cy="440" r="9"/>
+    <circle cx="900" cy="440" r="9"/>
+    <circle cx="800" cy="360" r="14"/>
+    <circle cx="800" cy="500" r="9"/>
+  </g>
+  <g stroke="#999999" stroke-width="2" fill="none" stroke-dasharray="4 8">
+    <line x1="540" y1="420" x2="660" y2="390"/>
+    <line x1="940" y1="390" x2="1060" y2="420"/>
+    <line x1="800" y1="560" x2="800" y2="620"/>
+  </g>
+  <g fill="#999999" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="22" letter-spacing="5">
+    <text x="640" y="672">LIVE EXPERIMENTS</text>
+  </g>
+  <text x="72" y="96" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="26" letter-spacing="8" fill="#999999">09 / 09</text>
+  <text x="72" y="812" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="44" font-weight="300" letter-spacing="3" fill="#111111">EXPERIMENTAL AI</text>
+  <line x1="72" y1="842" x2="1528" y2="842" stroke="#d8d8d8" stroke-width="1"/>
+</svg>
